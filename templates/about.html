@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title> About me </title>
+
+  <style>
+
+    body{
+      background-color: #FFFFD0;
+    }
+    .title{
+      background-color: white;
+      color: black;
+      margin: 10px;
+      padding: 40px;
+    }
+
+  </style>
+
+  </head>
+
+<body>
+
+<div class="title">
+  <h1> Here's a little about some of my generic aspirations </h1>
+
+  <p>My name is Josue, I recently went from learning Machine Learning <br />
+    and Data Science to learning about web Development. <br />
+    My goal is to make creative websites using <b>HTML, CSS, Javascript, <br />
+    Python's Django</b>, frameworks and eventually install <br/>
+    Machine learning applications to the web. While deciding what is best to use. </p>
+
+    <br/>
+
+    <form action="{% url 'home' %}">
+        <input type="submit" value="Keep Counting!" />
+    </form>
+
+</div>
+
+
+</body>
+</html>

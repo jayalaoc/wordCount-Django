@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title> About me </title>
+
+  <style>
+  body {
+    background-color: powderblue;
+  }
+
+  /* Style the header */
+  header {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: powderblue;
+  }
+
+  img{
+  border-radius: 50%;
+
+  }
+
+  </style>
+
+<body>
+
+<hr>
+<header>
+  <h1>WORD COUNT</h1>
+</header>
+
+<br />
+
+<form action="{% url 'count' %}">
+
+  <textarea cols="100" rows="5" name="fulltext"></textarea>
+  <br />
+  <input type="submit" value="Count!" />
+
+</form>
+
+<br />
+
+<form action="{% url 'about' %}">
+    <input type="submit" value="About" />
+</form>
+
+<hr>
+
+<img alt="Life is Too Short…" class="n3VNCb" src=
+"https://www.becomingminimalist.com/wp-content/uploads/2020/08/life-is-too-short-1024x649.jpg"
+data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 450px; height: 285.205px; margin: 0px;">
+
+</body>
+
+</html>

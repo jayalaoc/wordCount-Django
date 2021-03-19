@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title> About me </title>
+
+  <style>
+
+  body{
+    background-color: #DCB3C3;
+  }
+  .title{
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 40px;
+  }
+
+  </style>
+
+<div class="title">
+<h1> There are {{ count }} words in your text </h1>
+
+<a href=" {% url 'home' %}"> Start Again! </a>
+
+<h1> Your Text: </h1>
+{{ fulltext }}
+
+<h1> Word Count: </h1>
+
+{% for word, counttotal in worddictionary %}
+
+{{ word }} - {{ counttotal }}
+<br />
+
+{% endfor %}
+
+<img alt="Mortgage Process Have You Confused? You're Not Alone. We Can Help! -  Kristen Walther's Blog - Norcom Mortgage" class="n3VNCb" src="https://sturbridge.norcommortgage.com/uploads/pages/bigstock-Portrait-of-a-confused-young-c-250827721.jpg" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 450px; height: 300.094px; margin: 0px;">
+
+</div>
+</body>
+
+</html>
